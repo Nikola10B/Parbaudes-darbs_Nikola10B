@@ -1,0 +1,17 @@
+def rinda(fails)
+  try:
+    with open (fails, "r") as objekts:
+    visas_rindas=objekts.readlines()
+  if len(visas_rindas)>=3:
+    rinda_tresa=visas_rindas[2].strip()
+    print ("Trešās rindas saturs:")
+    print(rinda_tresa)
+  else:
+    print("Kļūda: Failā nav tik daudz rindu!")
+except FileNotFoundError:
+  print(f "Kļūda: Fails {teksts_fails} netika atrasts!"
+
+teksts_fails="teksts.txt"
+fails(teksts_fails)
+  
+  
