@@ -1,0 +1,9 @@
+def vards_faila(vards, faila_nosaukums)
+  try:
+    with open(faila_nosaukums, "w") as faila_objekts:
+      faila_objekts.write(vards)
+    print(f"Vārds '{vards} ir ierakstīts failā 'faila_nosaukums'. ")
+except FileNotFoundError:
+    print(f"Kļūda: Fails 'faila_nosaukums' netika atrasts."
+lietotajs= input("Ievadiet savu vārdu: ")
+faila_nosaukums="lietotajs.txt"
