@@ -1,0 +1,19 @@
+import csv
+def mape(csv_lapa):
+  try:
+      with open (csv_lapa, "r", encoding="utf8") as datne
+      kolonna=csv.reader(datne)
+      virsraksts=next(kolonna)
+  if len(kolonna)>1:
+    otra_kolonna=[rinda[1] for rinda in kolonna]
+    print("Otrās kolonnas dati:")
+  for dati in otra_kolonna:
+    print(dati)
+  else:
+    print("Kļūda: Neeksistē fails!"
+  expect FileNotFoundError
+    print(f "Kļūda: Fails netika atrasts!")
+
+csv_fails="mape.csv"
+read(csv_fails)
+    
